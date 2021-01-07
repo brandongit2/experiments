@@ -1,0 +1,61 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    position: relative;
+}
+
+.title {
+    display: inline-block;
+    font-family: new-spirit, serif;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.07em;
+    font-kerning: none;
+
+    &:not(.safari) {
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+    }
+}
+
+.input {
+    background: transparent;
+    border: none;
+    padding: 0px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    resize: none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &::selection {
+        background: transparent;
+    }
+}
+
+.display {
+    user-select: none;
+}
+
+.info-text {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    opacity: 0.5;
+    user-select: none;
+    margin-bottom: 1rem;
+    text-align: center;
+}
